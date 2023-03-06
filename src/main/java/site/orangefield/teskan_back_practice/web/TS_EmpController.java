@@ -20,8 +20,8 @@ public class TS_EmpController {
 
     // emp 목록 조회하기
     @GetMapping("/emp/list")
-    public List<TS_EmpDto> empList(){
+    public List<TS_EmpDto> empList(@PageableDefault(size = 12) Pageable pageable){
 
-        return ts_EmpService.getEmpList();
+        return ts_EmpService.getEmpList(pageable);
     }
 }

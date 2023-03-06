@@ -1,5 +1,7 @@
 package site.orangefield.teskan_back_practice.web.dto;
 
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -34,4 +36,10 @@ public class TS_EmpDto {
     private String image; // 사진
     private String password; // 비밀번호
     private String note; // 비고
+
+    // 페이징
+    private Integer prev; // 이전
+    private Integer next; // 다음
+    private List<Integer> pageNumbers; // 총 페이지 목록
+
 }

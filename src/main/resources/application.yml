@@ -3,8 +3,7 @@ server:
   servlet:
     context-path: /
     encoding:
-      charset: utf-8
-      
+      charset: utf-8      
 spring:
   jackson:
     property-naming-strategy: SNAKE_CASE
